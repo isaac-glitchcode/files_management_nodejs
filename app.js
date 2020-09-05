@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 18965
 app.listen(PORT, () => {console.log("Server Up!")});
 console.log("Puerto: "+PORT);
 app.use('/', express.static('assets'))
-app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded());
 
 
 app.get('/',(request,response) => {
