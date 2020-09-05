@@ -4,13 +4,11 @@
   "description": "servidor",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon static_files"
+    "start": "node app.js"
   },
   "author": "Isaac",
   "license": "ISC",
   "dependencies": {
-    
     "express": "^4.17.1"
   }
 }
