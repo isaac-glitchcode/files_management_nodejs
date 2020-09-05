@@ -5,11 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev" :"nodemon static_files"
+    "dev": "nodemon static_files"
   },
   "author": "Isaac",
   "license": "ISC",
   "dependencies": {
+    
     "express": "^4.17.1"
   },
   "devDependencies": {
