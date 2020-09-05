@@ -2,18 +2,10 @@ const fs = require('fs');
 const express = require('express');
 const path = require('path');
 const app = express();
-const bodyParser = require('body-parser');
+const PORT = process.env.PORT || 8001
 
-
-//__dirname es una variable global dentro del contexto de node que nos regresa la ruta absoluta donde nos ubicamos actualmente
-//path.join nos permite construir rutas absolutas
-//express.static nos sirve para indicar que nuestro servidor va estar sirviendo archivos estaticos sobre el directorio public
-
-
-
-app.listen(8000, () => {console.log("Server Up!")});
-
-
+app.listen(PORT, () => {console.log("Server Up!")});
+console.log("Puerto: "+PORT);
 app.use('/', express.static('assets'))
 app.use(bodyParser.urlencoded({extended:true}));
 
